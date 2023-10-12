@@ -14,6 +14,8 @@
 		87A8EBAB2ACF97D40093ADFA /* TranslateAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A8EBAA2ACF97D40093ADFA /* TranslateAppTests.swift */; };
 		87A8EBB52ACF97D40093ADFA /* TranslateAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A8EBB42ACF97D40093ADFA /* TranslateAppUITests.swift */; };
 		87A8EBB72ACF97D40093ADFA /* TranslateAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A8EBB62ACF97D40093ADFA /* TranslateAppUITestsLaunchTests.swift */; };
+		87A8EBC52ACF98280093ADFA /* Commons in Frameworks */ = {isa = PBXBuildFile; productRef = 87A8EBC42ACF98280093ADFA /* Commons */; };
+		87A8EBC82ACF9A150093ADFA /* ConnectionServices in Frameworks */ = {isa = PBXBuildFile; productRef = 87A8EBC72ACF9A150093ADFA /* ConnectionServices */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87A8EBC82ACF9A150093ADFA /* ConnectionServices in Frameworks */,
+				87A8EBC52ACF98280093ADFA /* Commons in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +147,10 @@
 			dependencies = (
 			);
 			name = TranslateApp;
+			packageProductDependencies = (
+				87A8EBC42ACF98280093ADFA /* Commons */,
+				87A8EBC72ACF9A150093ADFA /* ConnectionServices */,
+			);
 			productName = TranslateApp;
 			productReference = 87A8EB962ACF97D30093ADFA /* TranslateApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,10 @@
 				Base,
 			);
 			mainGroup = 87A8EB8D2ACF97D30093ADFA;
+			packageReferences = (
+				87A8EBC32ACF98280093ADFA /* XCRemoteSwiftPackageReference "Commons" */,
+				87A8EBC62ACF9A150093ADFA /* XCRemoteSwiftPackageReference "ConnectionServices" */,
+			);
 			productRefGroup = 87A8EB972ACF97D30093ADFA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -583,6 +595,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		87A8EBC32ACF98280093ADFA /* XCRemoteSwiftPackageReference "Commons" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Bodgar10/Commons.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.1.1;
+			};
+		};
+		87A8EBC62ACF9A150093ADFA /* XCRemoteSwiftPackageReference "ConnectionServices" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Bodgar10/ConnectionServices.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		87A8EBC42ACF98280093ADFA /* Commons */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87A8EBC32ACF98280093ADFA /* XCRemoteSwiftPackageReference "Commons" */;
+			productName = Commons;
+		};
+		87A8EBC72ACF9A150093ADFA /* ConnectionServices */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87A8EBC62ACF9A150093ADFA /* XCRemoteSwiftPackageReference "ConnectionServices" */;
+			productName = ConnectionServices;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 87A8EB8E2ACF97D30093ADFA /* Project object */;
 }
