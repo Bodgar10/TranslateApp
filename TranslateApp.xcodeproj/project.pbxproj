@@ -610,7 +610,7 @@
 			repositoryURL = "https://github.com/Bodgar10/ConnectionServices.git";
 			requirement = {
 				kind = exactVersion;
-				version = 0.1.1;
+				version = 0.1.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
